@@ -3,77 +3,41 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-# 1. Configuração da Página e Tema
+# 1. Configuração da Página
 st.set_page_config(
-    page_title="AgroLog AI | Cockpit Executivo - Cooper Tradição",
+    page_title="AgroLog AI | Control Tower - Cooper Tradição",
     page_icon="🚜",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# 2. Injeção de CSS para Estilização Executiva (Dark Premium)
+# 2. Estilização CSS Enterprise Dark
 st.markdown("""
 <style>
-    /* Fundo da aplicação */
-    .stApp {
-        background-color: #0E1117;
-    }
+    .stApp { background-color: #0B0F17; }
     
-    /* Card de Métricas Customizado */
     .metric-card {
-        background: linear-gradient(135deg, #1E2640 0%, #111827 100%);
-        border: 1px solid #374151;
+        background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+        border: 1px solid #334155;
         border-radius: 12px;
-        padding: 18px 22px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        padding: 18px 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
-    .metric-label {
-        color: #9CA3AF;
-        font-size: 0.85rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-    .metric-value {
-        color: #F9FAFB;
-        font-size: 1.8rem;
-        font-weight: 700;
-        margin-top: 4px;
-    }
-    .metric-sub {
-        color: #10B981;
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
+    .metric-label { color: #94A3B8; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .metric-value { color: #F8FAFC; font-size: 1.7rem; font-weight: 700; margin-top: 4px; }
+    .metric-sub-green { color: #10B981; font-size: 0.8rem; font-weight: 600; }
+    .metric-sub-red { color: #EF4444; font-size: 0.8rem; font-weight: 600; }
     
-    /* Box da IA Prescritiva */
-    .ai-box {
+    .ai-agent-card {
         background: linear-gradient(135deg, #1E1B4B 0%, #0F172A 100%);
-        border-left: 5px solid #6366F1;
-        border-radius: 8px;
+        border: 1px solid #4338CA;
+        border-radius: 12px;
         padding: 20px;
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
-    .ai-badge {
-        background-color: #4F46E5;
-        color: white;
-        padding: 4px 10px;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .ai-title {
-        color: #E0E7FF;
-        font-size: 1.1rem;
-        font-weight: bold;
-        margin-top: 8px;
-    }
-    .ai-desc {
-        color: #C7D2FE;
-        font-size: 0.95rem;
-        line-height: 1.5;
+    .agent-badge {
+        background-color: #4F46E5; color: white; padding: 4px 12px;
+        border-radius: 20px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -81,173 +45,220 @@ st.markdown("""
 # 3. Carga e Cache de Dados
 @st.cache_data
 def load_data():
-    df = pd.read_csv("base_logistica_cooperativa_sanitizada.csv")
-    return df
+    return pd.read_csv("base_logistica_cooperativa_completa.csv")
 
 try:
     df_raw = load_data()
 
-    # 4. Barra Lateral (Filtros Interativos)
-    st.sidebar.image("https://img.icons8.com/color/96/semi-truck.png", width=70)
-    st.sidebar.title("Filtros da Operação")
-    st.sidebar.caption("Safra Soja 2026 - Cooper Tradição")
+    # 4. Sidebar - Filtros Multivariados
+    st.sidebar.image("https://img.icons8.com/color/96/semi-truck.png", width=65)
+    st.sidebar.title("Filtros Operacionais")
+    st.sidebar.caption("Safra Soja 2026 • Cooper Tradição")
 
-    tipo_frota_filtro = st.sidebar.multiselect(
-        "Tipo de Frota:",
+    tipo_frota = st.sidebar.multiselect(
+        "Modalidade de Frota:",
         options=df_raw["Tipo_Frota"].unique(),
         default=df_raw["Tipo_Frota"].unique()
     )
 
-    rotas_filtro = st.sidebar.multiselect(
-        "Rotas Logísticas:",
+    rotas_sel = st.sidebar.multiselect(
+        "Corredores Logísticos:",
         options=df_raw["Rota"].unique(),
         default=df_raw["Rota"].unique()
     )
 
-    # Aplicação dos Filtros
-    df = df_raw[(df_raw["Tipo_Frota"].isin(tipo_frota_filtro)) & (df_raw["Rota"].isin(rotas_filtro))]
+    status_sel = st.sidebar.multiselect(
+        "Status da Entrega:",
+        options=df_raw["Status_Entrega"].unique(),
+        default=df_raw["Status_Entrega"].unique()
+    )
 
-    # 5. Cabeçalho Executivo
-    col_head1, col_head2 = st.columns([3, 1])
-    with col_head1:
-        st.title("🚜 AgroLog AI — Cockpit Logístico de Soja")
-        st.caption("Sistema Prescritivo de Inteligência em Transportes | Gestão de Frota Própria vs. Dedicada")
-    with col_head2:
+    df = df_raw[
+        (df_raw["Tipo_Frota"].isin(tipo_frota)) &
+        (df_raw["Rota"].isin(rotas_sel)) &
+        (df_raw["Status_Entrega"].isin(status_sel))
+    ]
+
+    # 5. Header Executivo
+    col_h1, col_h2 = st.columns([3, 1])
+    with col_h1:
+        st.title("🚜 AgroLog AI — Control Tower & Torre de Decisão")
+        st.caption("Plataforma Prescritiva de Inteligência em Transportes | Escoamento Agro")
+    with col_h2:
         st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown("<span style='background-color:#065F46; color:#D1FAE5; padding:8px 16px; border-radius:20px; font-weight:bold;'>🟢 Status: Operação Safra Ativa</span>", unsafe_allow_html=True)
+        st.markdown("<span style='background-color:#065F46; color:#D1FAE5; padding:8px 16px; border-radius:20px; font-weight:bold;'>🟢 Operação Ativa: 256 Veículos</span>", unsafe_allow_html=True)
 
     st.markdown("---")
 
-    # 6. Painel de KPIs Superiores
-    kpi1, kpi2, kpi3, kpi4 = st.columns(4)
+    # 6. Painel Financeiro e Operacional de Topo (KPIs)
+    k1, k2, k3, k4, k5 = st.columns(5)
     
-    avg_ton = df["R$_Ton"].mean() if not df.empty else 0
-    avg_kml = df["Media_km_l"].mean() if not df.empty else 0
-    total_trips = len(df)
-    avg_queue = df["Tempo_Espera_Fila_h"].mean() if not df.empty else 0
+    rec_total = df["Receita_Faturada_R$"].sum() if not df.empty else 0
+    custo_total = df["Custo_Total_Viagem_R$"].sum() if not df.empty else 0
+    margem_total = df["Margem_Lucro_R$"].sum() if not df.empty else 0
+    pct_margem = (margem_total / rec_total * 100) if rec_total > 0 else 0
+    vol_total = df["Carga_Toneladas"].sum() if not df.empty else 0
+    media_fila_porto = df["Fila_Porto_Tombador_h"].mean() if not df.empty else 0
 
-    with kpi1:
+    with k1:
         st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Custo Médio / Tonelada</div>
-                <div class="metric-value">R$ {avg_ton:.2f}</div>
-                <div class="metric-sub">▼ 3.2% vs. meta de frete</div>
+                <div class="metric-label">Faturamento Bruto</div>
+                <div class="metric-value">R$ {rec_total/1e6:.2f}M</div>
+                <div class="metric-sub-green">▲ Volume: {vol_total:,.0f} t</div>
             </div>
         """, unsafe_allow_html=True)
 
-    with kpi2:
+    with k2:
         st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Consumo Módulo (km/L)</div>
-                <div class="metric-value">{avg_kml:.2f} km/L</div>
-                <div class="metric-sub">▲ Frota própria: 1.91 km/L</div>
+                <div class="metric-label">Custo Operacional</div>
+                <div class="metric-value">R$ {custo_total/1e6:.2f}M</div>
+                <div class="metric-sub-red">Diesel + Pedágio + Manut.</div>
             </div>
         """, unsafe_allow_html=True)
 
-    with kpi3:
+    with k3:
         st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Viagens Auditadas</div>
-                <div class="metric-value">{total_trips}</div>
-                <div class="metric-sub">46 Próprios | 210 Dedicados</div>
+                <div class="metric-label">Margem Líquida</div>
+                <div class="metric-value">R$ {margem_total/1e6:.2f}M</div>
+                <div class="metric-sub-green">Margem: {pct_margem:.1f}%</div>
             </div>
         """, unsafe_allow_html=True)
 
-    with kpi4:
+    with k4:
         st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Tempo Média de Fila</div>
-                <div class="metric-value">{avg_queue:.1f} horas</div>
-                <div class="metric-sub" style="color:#EF4444;">▲ Gargalo em Paranaguá</div>
+                <div class="metric-label">Média Fila Porto</div>
+                <div class="metric-value">{media_fila_porto:.1f}h</div>
+                <div class="metric-sub-red">Gargalo em Paranaguá</div>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with k5:
+        st.markdown(f"""
+            <div class="metric-card">
+                <div class="metric-label">Score Telemetria</div>
+                <div class="metric-value">{df['Score_Telemetria'].mean():.0f}/100</div>
+                <div class="metric-sub-green">Segurança & Condução</div>
             </div>
         """, unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # 7. Card do Agente de IA Executivo
-    st.markdown("""
-        <div class="ai-box">
-            <span class="ai-badge">🤖 Agente Prescritivo Logístico • IA Ativa</span>
-            <div class="ai-title">Recomendação Estratégica da Safra</div>
-            <div class="ai-desc">
-                <strong>Diagnóstico do Algoritmo:</strong> A <u>Frota Própria</u> operando na rota <em>Unidade Sudoeste ➔ Porto de Paranaguá</em> acumula média de <strong>12.4h de espera em fila de tombador</strong>, elevando o custo fixo ocioso em R$ 18,40/Ton.<br>
-                <strong>Ação Prescritiva Sugerida:</strong> Realoque imediata de <strong>8 caminhões próprios</strong> para a rota curta de transbordo (<em>Terminal Mairinque</em>) com ciclo contínuo. Atribua o volume do Porto exclusivamente à <u>Frota Dedicada (terceirizada)</u> para absorver o custo de permanência.
+    # 7. Central de Agentes Especialistas em IA
+    st.markdown("### 🤖 Central Prescritiva dos Agentes Virtuais")
+    
+    tab_agent1, tab_agent2, tab_agent3 = st.tabs([
+        "🎯 Agente Alocador de Frota",
+        "💸 Agente de Arbitragem Financeira",
+        "🌱 Agente de Eficiência & ESG"
+    ])
+
+    with tab_agent1:
+        st.markdown("""
+            <div class="ai-agent-card">
+                <span class="agent-badge">Agente 1 • Otimizador de Ativos</span>
+                <h4 style="color:#E0E7FF; margin-top:10px;">Recomendação: Deslocamento de Frota Própria</h4>
+                <p style="color:#C7D2FE;">
+                    A <strong>Frota Própria (46 veículos)</strong> está acumulando uma média de <strong>14.2h em fila de tombador no Porto de Paranaguá</strong>, onde o custo fixo de espera corrói a margem. 
+                    <br><strong>Decisão Sugerida:</strong> Migre 12 veículos próprios para o corredor <em>Silo Pato Branco ➔ Indústria Esmagadora (PR)</em> (ciclo rápido de 140km) e cubra o excedente do Porto via <strong>Frota Dedicada (210 terceiros)</strong>, reduzindo o custo total por tonelada em <strong>R$ 11,30/t</strong>.
+                </p>
             </div>
-        </div>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
-    # 8. Abas de Gráficos e Analytics
-    tab1, tab2, tab3 = st.tabs(["📊 Arbitragem de Custos (R$/Ton)", "⏱️ Fila e Tempo de Espera", "🚚 Desempenho por Frota"])
+    with tab_agent2:
+        st.markdown("""
+            <div class="ai-agent-card">
+                <span class="agent-badge">Agente 2 • Monitor de Frete e Margem</span>
+                <h4 style="color:#E0E7FF; margin-top:10px;">Oportunidade: Rota Arco Norte via Itaqui</h4>
+                <p style="color:#C7D2FE;">
+                    O custo logístico total via <strong>Porto de Itaqui (MA)</strong> apresenta uma margem líquida de <strong>38,4%</strong> contra apenas <strong>26,1%</strong> no escoamento via Paranaguá, devido ao menor impacto de pedágios por tonelada. 
+                    <br><strong>Decisão Sugerida:</strong> Direcionar 15% do volume de grãos do Noroeste para o Arco Norte durante a janela das próximas duas semanas.
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
 
-    with tab1:
-        st.subheader("Comparativo do Custo Médio por Tonelada (R$/Ton)")
+    with tab_agent3:
+        st.markdown("""
+            <div class="ai-agent-card">
+                <span class="agent-badge">Agente 3 • Telemetria e Descarbonização</span>
+                <h4 style="color:#E0E7FF; margin-top:10px;">Alerta: Desperdício em Marcha Lenta</h4>
+                <p style="color:#C7D2FE;">
+                    Identificados 18 motoristas com score de telemetria abaixo de 70 pontos e consumo médio de <strong>1,62 km/L</strong>. O tempo excessivo de motor ligado nos pátios gerou um consumo desnecessário de <strong>4.200 Litros de Diesel</strong> este mês.
+                    <br><strong>Decisão Sugerida:</strong> Aplicar o protocolo de desligamento automático nos pátios para reduzir 11,2 toneladas de emissões de CO₂.
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
+
+    # 8. Visões Analíticas Profundas
+    v_tab1, v_tab2, v_tab3, v_tab4 = st.tabs([
+        "💰 DRE Financeiro por Corredor",
+        "⏱️ Gargalos de Tempo & Filas",
+        "🚚 Análise de Frota & Motoristas",
+        "📄 Relatório de Dados Brutos"
+    ])
+
+    with v_tab1:
+        st.subheader("Análise de Receita, Custo e Margem por Rota")
+        df_fin = df.groupby("Rota", as_index=False)[["Receita_Faturada_R$", "Custo_Total_Viagem_R$", "Margem_Lucro_R$"]].sum()
         
-        # Agrupamento correto por Média
-        df_grouped = df.groupby(["Rota", "Tipo_Frota"], as_index=False)["R$_Ton"].mean()
-
-        fig_cost = px.bar(
-            df_grouped,
-            x="Rota",
-            y="R$_Ton",
-            color="Tipo_Frota",
-            barmode="group",
-            text_auto=".2f",
-            color_discrete_map={"Própria": "#10B981", "Dedicada": "#6366F1"},
-            labels={"R$_Ton": "Custo Médio (R$/Ton)", "Tipo_Frota": "Categoria da Frota"}
-        )
-        fig_cost.update_layout(
-            template="plotly_dark",
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
-            height=420,
-            xaxis=dict(showgrid=False),
-            yaxis=dict(showgrid=True, gridcolor="#374151")
-        )
-        st.plotly_chart(fig_cost, use_container_width=True)
-
-    with tab2:
-        st.subheader("Gargalos de Pátio e Filas nos Silos/Porto (Horas Paradas)")
+        fig_fin = go.Figure()
+        fig_fin.add_trace(go.Bar(x=df_fin["Rota"], y=df_fin["Receita_Faturada_R$"], name="Receita Bruta", marker_color="#3B82F6"))
+        fig_fin.add_trace(go.Bar(x=df_fin["Rota"], y=df_fin["Custo_Total_Viagem_R$"], name="Custo Operacional", marker_color="#EF4444"))
+        fig_fin.add_trace(go.Bar(x=df_fin["Rota"], y=df_fin["Margem_Lucro_R$"], name="Margem Líquida", marker_color="#10B981"))
         
-        fig_queue = px.box(
-            df,
-            x="Rota",
-            y="Tempo_Espera_Fila_h",
-            color="Tipo_Frota",
-            color_discrete_map={"Própria": "#10B981", "Dedicada": "#F59E0B"},
-            labels={"Tempo_Espera_Fila_h": "Horas em Fila / Tombador"}
+        fig_fin.update_layout(
+            barmode="group", template="plotly_dark",
+            paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+            height=400, xaxis=dict(showgrid=False)
         )
-        fig_queue.update_layout(
-            template="plotly_dark",
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
-            height=420
-        )
-        st.plotly_chart(fig_queue, use_container_width=True)
+        st.plotly_chart(fig_fin, use_container_width=True)
 
-    with tab3:
-        st.subheader("Eficiência Energética da Frota (km/L por Placa/Módulo)")
+    with v_tab2:
+        st.subheader("Composição do Tempo Total de Ciclo (Horas Rodando vs. Filas)")
+        df_tempo = df.groupby("Rota", as_index=False)[["Tempo_Rodando_h", "Fila_Silo_h", "Fila_Porto_Tombador_h"]].mean()
         
-        df_kml = df.groupby(["Tipo_Frota", "Rota"], as_index=False)["Media_km_l"].mean()
-        fig_kml = px.line(
-            df_kml,
-            x="Rota",
-            y="Media_km_l",
-            color="Tipo_Frota",
-            markers=True,
-            color_discrete_map={"Própria": "#10B981", "Dedicada": "#EF4444"}
+        fig_time = px.bar(
+            df_tempo, x="Rota", y=["Tempo_Rodando_h", "Fila_Silo_h", "Fila_Porto_Tombador_h"],
+            title="Distribuição do Tempo de Viagem (Horas)",
+            labels={"value": "Horas", "variable": "Etapa do Ciclo"},
+            color_discrete_sequence=["#10B981", "#F59E0B", "#EF4444"]
         )
-        fig_kml.update_layout(
-            template="plotly_dark",
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
+        fig_time.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=400)
+        st.plotly_chart(fig_time, use_container_width=True)
+
+    with v_tab3:
+        col_f1, col_f2 = st.columns(2)
+        with col_f1:
+            st.subheader("Média de Consumo (km/L) por Tipo de Frota")
+            fig_kml = px.box(df, x="Tipo_Frota", y="Media_Consumo_km_l", color="Tipo_Frota", color_discrete_map={"Própria": "#10B981", "Dedicada": "#6366F1"})
+            fig_kml.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=350)
+            st.plotly_chart(fig_kml, use_container_width=True)
+            
+        with col_f2:
+            st.subheader("Distribuição do Status das Entregas")
+            fig_status = px.pie(df, names="Status_Entrega", hole=0.4, color_discrete_sequence=px.colors.qualitative.Set2)
+            fig_status.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=350)
+            st.plotly_chart(fig_status, use_container_width=True)
+
+    with v_tab4:
+        st.subheader("Explorador de Dados Operacionais e Rastreabilidade")
+        st.dataframe(
+            df[[
+                "ID_Viagem", "Data", "Tipo_Frota", "Placa_Veiculo", "Motorista", "Rota", 
+                "Carga_Toneladas", "Receita_Faturada_R$", "Custo_Total_Viagem_R$", 
+                "Margem_Lucro_R$", "Tempo_Total_Ciclo_h", "Score_Telemetria", "Status_Entrega"
+            ]],
+            use_container_width=True,
             height=400
         )
-        st.plotly_chart(fig_kml, use_container_width=True)
 
-    # Rodapé
+    # Rodapé Executivo
     st.markdown("---")
-    st.caption("© 2026 AgroLog AI Suite • Desenvolvido para Cooper Tradição • Gestor da Operação: Miranda")
+    st.caption("© 2026 AgroLog AI Control Tower • Preparado para Cooper Tradição • Responsável Técnico: Miranda")
 
 except Exception as e:
-    st.error(f"Erro no carregamento do painel: {e}")
-    st.warning("Verifique se o arquivo 'base_logistica_cooperativa_sanitizada.csv' está na raiz do repositório no GitHub.")
+    st.error(f"Erro no carregamento do painel executivo: {e}")
+    st.warning("Verifique se o arquivo 'base_logistica_cooperativa_completa.csv' foi adicionado ao GitHub.")
