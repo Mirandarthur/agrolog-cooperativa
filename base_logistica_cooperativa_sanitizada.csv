@@ -1,0 +1,251 @@
+ID_Viagem,Data,Tipo_Frota,Placa_Veiculo,Rota,Distancia_km,Carga_t,Tempo_Viagem_h,Tempo_Espera_Fila_h,Consumo_L,Media_km_l,Custo_Total_R$,R$_km,R$_Ton
+VJ-1000,01/02/2026,Dedicada,PR-D191,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.4,11.1,5.5,313.5,1.85,3955.6,6.82,81.73
+VJ-1001,01/02/2026,Dedicada,PR-D160,Unidade Sul -> Transbordo Ferroviário (PR),280,50.0,5.5,4.4,163.7,1.71,1904.0,6.8,38.08
+VJ-1002,01/02/2026,Dedicada,PR-D161,Unidade Sul -> Transbordo Ferroviário (PR),280,49.0,5.3,15.1,160.0,1.75,1842.4,6.58,37.6
+VJ-1003,01/02/2026,Dedicada,PR-D067,Unidade Oeste -> Indústria Local (PR),140,48.1,2.8,4.1,76.5,1.83,975.8,6.97,20.29
+VJ-1004,01/02/2026,Própria,PR-P018,Unidade Oeste -> Indústria Local (PR),140,47.8,2.5,29.1,72.2,1.94,849.8,6.07,17.78
+VJ-1005,01/02/2026,Própria,PR-P025,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,9.5,11.4,303.7,1.91,3613.4,6.23,75.44
+VJ-1006,01/02/2026,Própria,PR-P042,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,11.5,1.4,310.2,1.87,3671.4,6.33,76.33
+VJ-1007,01/02/2026,Dedicada,PR-D054,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,11.3,16.0,325.8,1.78,3712.0,6.4,77.49
+VJ-1008,02/02/2026,Dedicada,PR-D058,Unidade Oeste -> Indústria Local (PR),140,48.0,2.5,0.7,83.3,1.68,957.6,6.84,19.95
+VJ-1009,02/02/2026,Dedicada,PR-D067,Unidade Norte -> Terminal Mairinque (SP),490,48.2,8.0,10.2,281.6,1.74,3214.4,6.56,66.69
+VJ-1010,02/02/2026,Própria,PR-P040,Unidade Norte -> Terminal Mairinque (SP),490,47.9,9.1,2.9,242.6,2.02,3047.8,6.22,63.63
+VJ-1011,02/02/2026,Dedicada,PR-D174,Unidade Norte -> Terminal Mairinque (SP),490,49.7,8.7,12.6,260.6,1.88,3116.4,6.36,62.7
+VJ-1012,02/02/2026,Dedicada,PR-D024,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.7,11.5,12.2,320.4,1.81,3735.2,6.44,78.31
+VJ-1013,02/02/2026,Dedicada,PR-D114,Unidade Oeste -> Indústria Local (PR),140,48.8,2.7,9.8,80.9,1.73,977.2,6.98,20.02
+VJ-1014,02/02/2026,Dedicada,PR-D032,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.5,9.4,9.4,320.4,1.81,3758.4,6.48,77.49
+VJ-1015,02/02/2026,Dedicada,PR-D175,Unidade Oeste -> Indústria Local (PR),140,50.0,2.3,2.2,78.2,1.79,975.8,6.97,19.52
+VJ-1016,03/02/2026,Dedicada,PR-D086,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.8,11.6,0.5,315.2,1.84,3781.6,6.52,79.11
+VJ-1017,03/02/2026,Dedicada,PR-D151,Unidade Sul -> Transbordo Ferroviário (PR),280,48.5,4.6,3.1,164.7,1.7,1906.8,6.81,39.32
+VJ-1018,03/02/2026,Dedicada,PR-D194,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.9,10.1,1.1,316.9,1.83,3978.8,6.86,79.74
+VJ-1019,03/02/2026,Dedicada,PR-D127,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.7,9.6,7.1,324.0,1.79,3891.8,6.71,78.31
+VJ-1020,03/02/2026,Dedicada,PR-D155,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.5,10.5,2.5,310.2,1.87,3793.2,6.54,76.63
+VJ-1021,03/02/2026,Própria,PR-P042,Unidade Norte -> Terminal Mairinque (SP),490,48.1,8.7,22.3,243.8,2.01,3008.6,6.14,62.55
+VJ-1022,03/02/2026,Dedicada,PR-D130,Unidade Oeste -> Indústria Local (PR),140,47.9,2.5,6.1,77.3,1.81,886.2,6.33,18.5
+VJ-1023,03/02/2026,Dedicada,PR-D017,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.2,10.0,10.4,310.2,1.87,3793.2,6.54,77.1
+VJ-1024,04/02/2026,Dedicada,PR-D104,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,11.2,0.9,341.2,1.7,3955.6,6.82,79.43
+VJ-1025,04/02/2026,Dedicada,PR-D161,Unidade Norte -> Terminal Mairinque (SP),490,48.9,9.7,11.9,262.0,1.87,3454.5,7.05,70.64
+VJ-1026,04/02/2026,Dedicada,PR-D137,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.9,10.8,15.4,318.7,1.82,4060.0,7.0,83.03
+VJ-1027,04/02/2026,Dedicada,PR-D043,Unidade Norte -> Terminal Mairinque (SP),490,48.2,8.4,4.0,289.9,1.69,3385.9,6.91,70.25
+VJ-1028,04/02/2026,Dedicada,PR-D176,Unidade Norte -> Terminal Mairinque (SP),490,49.4,9.3,5.6,281.6,1.74,3395.7,6.93,68.74
+VJ-1029,04/02/2026,Própria,PR-P039,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.0,10.0,8.7,299.0,1.94,3393.0,5.85,70.69
+VJ-1030,04/02/2026,Dedicada,PR-D170,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.3,9.4,1.2,343.2,1.69,3775.8,6.51,78.17
+VJ-1031,04/02/2026,Própria,PR-P026,Unidade Sul -> Transbordo Ferroviário (PR),280,48.6,5.5,4.2,144.3,1.94,1680.0,6.0,34.57
+VJ-1032,05/02/2026,Própria,PR-P035,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.8,10.0,3.1,295.9,1.96,3636.6,6.27,74.52
+VJ-1033,05/02/2026,Dedicada,PR-D050,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,10.5,0.9,322.2,1.8,3915.0,6.75,81.39
+VJ-1034,05/02/2026,Dedicada,PR-D153,Unidade Norte -> Terminal Mairinque (SP),490,47.8,8.1,2.7,289.9,1.69,3131.1,6.39,65.5
+VJ-1035,05/02/2026,Dedicada,PR-D152,Unidade Sul -> Transbordo Ferroviário (PR),280,49.0,5.4,0.4,151.4,1.85,1864.8,6.66,38.06
+VJ-1036,05/02/2026,Dedicada,PR-D013,Unidade Sul -> Transbordo Ferroviário (PR),280,48.2,4.8,0.2,149.7,1.87,1867.6,6.67,38.75
+VJ-1037,05/02/2026,Própria,PR-P007,Unidade Norte -> Terminal Mairinque (SP),490,49.0,8.2,0.9,241.4,2.03,2886.1,5.89,58.9
+VJ-1038,05/02/2026,Dedicada,PR-D057,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,9.5,19.8,316.9,1.83,3909.2,6.74,81.61
+VJ-1039,05/02/2026,Dedicada,PR-D036,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.7,10.0,4.8,339.2,1.71,3828.0,6.6,78.6
+VJ-1040,06/02/2026,Própria,PR-P045,Unidade Norte -> Terminal Mairinque (SP),490,48.8,8.8,20.3,251.3,1.95,2866.5,5.85,58.74
+VJ-1041,06/02/2026,Dedicada,PR-D020,Unidade Oeste -> Indústria Local (PR),140,47.6,2.4,3.4,83.3,1.68,894.6,6.39,18.79
+VJ-1042,06/02/2026,Própria,PR-P001,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.3,9.6,2.2,315.2,1.84,3572.8,6.16,73.97
+VJ-1043,06/02/2026,Dedicada,PR-D008,Unidade Sul -> Transbordo Ferroviário (PR),280,47.8,4.9,4.2,160.9,1.74,1772.4,6.33,37.08
+VJ-1044,06/02/2026,Dedicada,PR-D144,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.7,11.5,3.5,325.8,1.78,3996.2,6.89,83.78
+VJ-1045,06/02/2026,Dedicada,PR-D142,Unidade Oeste -> Indústria Local (PR),140,50.0,2.3,0.7,76.5,1.83,984.2,7.03,19.68
+VJ-1046,06/02/2026,Dedicada,PR-D204,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.3,10.0,6.1,318.7,1.82,3781.6,6.52,78.29
+VJ-1047,06/02/2026,Dedicada,PR-D115,Unidade Oeste -> Indústria Local (PR),140,49.5,2.4,1.5,79.1,1.77,978.6,6.99,19.77
+VJ-1048,07/02/2026,Dedicada,PR-D143,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,11.0,5.8,335.3,1.73,3787.4,6.53,78.74
+VJ-1049,07/02/2026,Dedicada,PR-D092,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.2,10.0,6.3,308.5,1.88,4077.4,7.03,82.87
+VJ-1050,07/02/2026,Dedicada,PR-D098,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.4,10.6,1.0,327.7,1.77,4002.0,6.9,81.01
+VJ-1051,07/02/2026,Dedicada,PR-D066,Unidade Oeste -> Indústria Local (PR),140,49.0,2.4,0.4,79.1,1.77,971.6,6.94,19.83
+VJ-1052,07/02/2026,Dedicada,PR-D032,Unidade Norte -> Terminal Mairinque (SP),490,48.7,9.6,9.1,286.5,1.71,3091.9,6.31,63.49
+VJ-1053,07/02/2026,Dedicada,PR-D191,Unidade Oeste -> Indústria Local (PR),140,48.5,2.4,3.7,76.1,1.84,989.8,7.07,20.41
+VJ-1054,07/02/2026,Dedicada,PR-D086,Unidade Sul -> Transbordo Ferroviário (PR),280,48.4,4.5,0.4,153.8,1.82,1926.4,6.88,39.8
+VJ-1055,07/02/2026,Dedicada,PR-D051,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,11.5,31.6,337.2,1.72,3793.2,6.54,76.17
+VJ-1056,08/02/2026,Própria,PR-P025,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.6,9.4,0.4,292.9,1.98,3427.8,5.91,69.11
+VJ-1057,08/02/2026,Dedicada,PR-D186,Unidade Sul -> Transbordo Ferroviário (PR),280,49.9,5.1,7.1,153.8,1.82,1828.4,6.53,36.64
+VJ-1058,08/02/2026,Própria,PR-P022,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.8,9.6,24.7,299.0,1.94,3480.0,6.0,72.8
+VJ-1059,08/02/2026,Dedicada,PR-D058,Unidade Sul -> Transbordo Ferroviário (PR),280,49.3,4.7,1.6,161.8,1.73,1789.2,6.39,36.29
+VJ-1060,08/02/2026,Dedicada,PR-D058,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,10.2,0.9,310.2,1.87,3978.8,6.86,79.9
+VJ-1061,08/02/2026,Dedicada,PR-D086,Unidade Sul -> Transbordo Ferroviário (PR),280,48.0,4.8,0.8,163.7,1.71,1884.4,6.73,39.26
+VJ-1062,08/02/2026,Dedicada,PR-D049,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.7,9.6,2.2,327.7,1.77,3700.4,6.38,77.58
+VJ-1063,08/02/2026,Dedicada,PR-D180,Unidade Sul -> Transbordo Ferroviário (PR),280,49.4,5.1,0.6,149.7,1.87,1817.2,6.49,36.79
+VJ-1064,09/02/2026,Dedicada,PR-D170,Unidade Oeste -> Indústria Local (PR),140,48.9,2.6,7.1,79.5,1.76,883.4,6.31,18.07
+VJ-1065,09/02/2026,Dedicada,PR-D070,Unidade Sul -> Transbordo Ferroviário (PR),280,49.6,4.8,0.4,154.7,1.81,1870.4,6.68,37.71
+VJ-1066,09/02/2026,Própria,PR-P015,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.8,9.7,4.3,297.4,1.95,3456.8,5.96,72.32
+VJ-1067,09/02/2026,Dedicada,PR-D054,Unidade Oeste -> Indústria Local (PR),140,49.5,2.4,34.3,80.9,1.73,949.2,6.78,19.18
+VJ-1068,09/02/2026,Própria,PR-P043,Unidade Sul -> Transbordo Ferroviário (PR),280,48.0,4.7,10.1,145.8,1.92,1769.6,6.32,36.87
+VJ-1069,09/02/2026,Dedicada,PR-D188,Unidade Oeste -> Indústria Local (PR),140,47.9,2.5,5.7,79.5,1.76,915.6,6.54,19.11
+VJ-1070,09/02/2026,Dedicada,PR-D101,Unidade Oeste -> Indústria Local (PR),140,47.9,2.3,2.2,75.3,1.86,964.6,6.89,20.14
+VJ-1071,09/02/2026,Dedicada,PR-D008,Unidade Oeste -> Indústria Local (PR),140,49.5,2.7,5.9,80.9,1.73,887.6,6.34,17.93
+VJ-1072,10/02/2026,Própria,PR-P044,Unidade Oeste -> Indústria Local (PR),140,49.2,2.5,4.5,76.5,1.83,849.8,6.07,17.27
+VJ-1073,10/02/2026,Dedicada,PR-D108,Unidade Oeste -> Indústria Local (PR),140,48.8,2.8,3.3,82.8,1.69,977.2,6.98,20.02
+VJ-1074,10/02/2026,Dedicada,PR-D005,Unidade Oeste -> Indústria Local (PR),140,48.4,2.6,0.8,77.3,1.81,956.2,6.83,19.76
+VJ-1075,10/02/2026,Dedicada,PR-D103,Unidade Sul -> Transbordo Ferroviário (PR),280,49.7,5.1,13.1,160.0,1.75,1895.6,6.77,38.14
+VJ-1076,10/02/2026,Dedicada,PR-D196,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.5,10.6,3.6,313.5,1.85,4065.8,7.01,83.83
+VJ-1077,10/02/2026,Própria,PR-P006,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.5,9.9,1.3,303.7,1.91,3538.0,6.1,71.47
+VJ-1078,10/02/2026,Dedicada,PR-D109,Unidade Sul -> Transbordo Ferroviário (PR),280,48.6,5.1,2.8,149.7,1.87,1780.8,6.36,36.64
+VJ-1079,10/02/2026,Própria,PR-P032,Unidade Sul -> Transbordo Ferroviário (PR),280,48.4,5.1,3.2,140.0,2.0,1747.2,6.24,36.1
+VJ-1080,11/02/2026,Dedicada,PR-D116,Unidade Oeste -> Indústria Local (PR),140,48.7,2.6,10.5,75.7,1.85,971.6,6.94,19.95
+VJ-1081,11/02/2026,Dedicada,PR-D094,Unidade Oeste -> Indústria Local (PR),140,48.3,2.6,7.9,76.1,1.84,886.2,6.33,18.35
+VJ-1082,11/02/2026,Dedicada,PR-D047,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.4,11.0,8.8,316.9,1.83,3926.6,6.77,79.49
+VJ-1083,11/02/2026,Própria,PR-P035,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.8,11.4,0.1,297.4,1.95,3410.4,5.88,69.89
+VJ-1084,11/02/2026,Dedicada,PR-D055,Unidade Oeste -> Indústria Local (PR),140,48.1,2.4,3.2,76.5,1.83,977.2,6.98,20.32
+VJ-1085,11/02/2026,Dedicada,PR-D168,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.7,10.0,3.9,320.4,1.81,3897.6,6.72,78.42
+VJ-1086,11/02/2026,Dedicada,PR-D052,Unidade Oeste -> Indústria Local (PR),140,48.5,2.4,0.1,81.9,1.71,889.0,6.35,18.33
+VJ-1087,11/02/2026,Dedicada,PR-D144,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.9,10.4,1.8,343.2,1.69,4042.6,6.97,82.67
+VJ-1088,12/02/2026,Dedicada,PR-D013,Unidade Sul -> Transbordo Ferroviário (PR),280,49.8,5.1,8.6,150.5,1.86,1898.4,6.78,38.12
+VJ-1089,12/02/2026,Dedicada,PR-D114,Unidade Sul -> Transbordo Ferroviário (PR),280,49.1,4.6,0.9,155.6,1.8,1789.2,6.39,36.44
+VJ-1090,12/02/2026,Própria,PR-P042,Unidade Oeste -> Indústria Local (PR),140,47.8,2.5,4.6,75.7,1.85,834.4,5.96,17.46
+VJ-1091,12/02/2026,Dedicada,PR-D158,Unidade Oeste -> Indústria Local (PR),140,49.8,2.5,1.5,78.7,1.78,984.2,7.03,19.76
+VJ-1092,12/02/2026,Dedicada,PR-D147,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.1,11.5,0.1,341.2,1.7,3967.2,6.84,80.8
+VJ-1093,12/02/2026,Dedicada,PR-D145,Unidade Norte -> Terminal Mairinque (SP),490,48.3,9.1,1.7,286.5,1.71,3410.4,6.96,70.61
+VJ-1094,12/02/2026,Dedicada,PR-D120,Unidade Oeste -> Indústria Local (PR),140,47.8,2.6,22.3,76.9,1.82,980.0,7.0,20.5
+VJ-1095,12/02/2026,Dedicada,PR-D063,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.5,10.6,9.7,327.7,1.77,3920.8,6.76,79.21
+VJ-1096,13/02/2026,Dedicada,PR-D019,Unidade Sul -> Transbordo Ferroviário (PR),280,49.1,4.9,19.3,162.8,1.72,1878.8,6.71,38.26
+VJ-1097,13/02/2026,Dedicada,PR-D092,Unidade Norte -> Terminal Mairinque (SP),490,48.8,8.7,4.0,275.3,1.78,3253.6,6.64,66.67
+VJ-1098,13/02/2026,Própria,PR-P026,Unidade Sul -> Transbordo Ferroviário (PR),280,49.7,4.9,0.7,150.5,1.86,1635.2,5.84,32.9
+VJ-1099,13/02/2026,Própria,PR-P037,Unidade Norte -> Terminal Mairinque (SP),490,49.5,8.3,4.8,255.2,1.92,2984.1,6.09,60.28
+VJ-1100,13/02/2026,Própria,PR-P026,Unidade Oeste -> Indústria Local (PR),140,47.9,2.3,3.6,75.3,1.86,814.8,5.82,17.01
+VJ-1101,13/02/2026,Dedicada,PR-D117,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.3,9.9,11.2,315.2,1.84,3932.4,6.78,81.42
+VJ-1102,13/02/2026,Dedicada,PR-D062,Unidade Sul -> Transbordo Ferroviário (PR),280,48.1,4.6,0.6,160.9,1.74,1962.8,7.01,40.81
+VJ-1103,13/02/2026,Dedicada,PR-D023,Unidade Sul -> Transbordo Ferroviário (PR),280,49.4,5.6,4.0,158.2,1.77,1862.0,6.65,37.69
+VJ-1104,14/02/2026,Dedicada,PR-D127,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.6,11.1,1.0,345.2,1.68,3938.2,6.79,82.74
+VJ-1105,14/02/2026,Dedicada,PR-D137,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.9,11.6,2.4,343.2,1.69,3949.8,6.81,80.77
+VJ-1106,14/02/2026,Dedicada,PR-D140,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.4,10.0,8.0,329.5,1.76,3926.6,6.77,79.49
+VJ-1107,14/02/2026,Dedicada,PR-D129,Unidade Norte -> Terminal Mairinque (SP),490,49.7,8.1,3.9,275.3,1.78,3361.4,6.86,67.63
+VJ-1108,14/02/2026,Dedicada,PR-D058,Unidade Sul -> Transbordo Ferroviário (PR),280,48.4,5.3,2.8,155.6,1.8,1817.2,6.49,37.55
+VJ-1109,14/02/2026,Própria,PR-P001,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.6,9.5,3.0,320.4,1.81,3596.0,6.2,72.5
+VJ-1110,14/02/2026,Dedicada,PR-D034,Unidade Oeste -> Indústria Local (PR),140,47.8,2.8,3.7,76.9,1.82,893.2,6.38,18.69
+VJ-1111,14/02/2026,Própria,PR-P032,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.6,9.5,9.2,310.2,1.87,3561.2,6.14,71.8
+VJ-1112,15/02/2026,Dedicada,PR-D126,Unidade Sul -> Transbordo Ferroviário (PR),280,47.8,5.2,13.4,152.2,1.84,1873.2,6.69,39.19
+VJ-1113,15/02/2026,Dedicada,PR-D118,Unidade Norte -> Terminal Mairinque (SP),490,48.5,9.6,18.7,289.9,1.69,3341.8,6.82,68.9
+VJ-1114,15/02/2026,Dedicada,PR-D048,Unidade Norte -> Terminal Mairinque (SP),490,49.5,8.8,9.3,275.3,1.78,3459.4,7.06,69.89
+VJ-1115,15/02/2026,Dedicada,PR-D089,Unidade Oeste -> Indústria Local (PR),140,47.9,2.6,2.3,82.4,1.7,949.2,6.78,19.82
+VJ-1116,15/02/2026,Dedicada,PR-D117,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,10.9,7.0,335.3,1.73,3996.2,6.89,83.08
+VJ-1117,15/02/2026,Dedicada,PR-D129,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.3,10.8,3.5,308.5,1.88,3891.8,6.71,78.94
+VJ-1118,15/02/2026,Dedicada,PR-D016,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.3,9.7,1.8,339.2,1.71,3949.8,6.81,80.12
+VJ-1119,15/02/2026,Dedicada,PR-D189,Unidade Sul -> Transbordo Ferroviário (PR),280,49.1,5.0,11.0,157.3,1.78,1780.8,6.36,36.27
+VJ-1120,16/02/2026,Dedicada,PR-D192,Unidade Norte -> Terminal Mairinque (SP),490,49.2,9.1,0.2,272.2,1.8,3185.0,6.5,64.74
+VJ-1121,16/02/2026,Dedicada,PR-D191,Unidade Sul -> Transbordo Ferroviário (PR),280,48.9,4.9,13.9,153.8,1.82,1845.2,6.59,37.73
+VJ-1122,16/02/2026,Dedicada,PR-D069,Unidade Sul -> Transbordo Ferroviário (PR),280,48.1,4.8,3.7,156.4,1.79,1870.4,6.68,38.89
+VJ-1123,16/02/2026,Própria,PR-P022,Unidade Oeste -> Indústria Local (PR),140,48.4,2.6,6.1,76.5,1.83,893.2,6.38,18.45
+VJ-1124,16/02/2026,Dedicada,PR-D093,Unidade Norte -> Terminal Mairinque (SP),490,48.0,8.9,6.5,280.0,1.75,3140.9,6.41,65.44
+VJ-1125,16/02/2026,Dedicada,PR-D195,Unidade Sul -> Transbordo Ferroviário (PR),280,49.8,5.4,13.5,157.3,1.78,1825.6,6.52,36.66
+VJ-1126,16/02/2026,Dedicada,PR-D076,Unidade Norte -> Terminal Mairinque (SP),490,49.0,9.4,6.1,288.2,1.7,3469.2,7.08,70.8
+VJ-1127,16/02/2026,Dedicada,PR-D154,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.5,10.0,5.7,331.4,1.75,3810.6,6.57,78.57
+VJ-1128,17/02/2026,Própria,PR-P016,Unidade Oeste -> Indústria Local (PR),140,48.7,2.7,0.4,76.9,1.82,831.6,5.94,17.08
+VJ-1129,17/02/2026,Dedicada,PR-D179,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.9,10.3,4.4,341.2,1.7,3746.8,6.46,75.09
+VJ-1130,17/02/2026,Dedicada,PR-D086,Unidade Sul -> Transbordo Ferroviário (PR),280,47.9,4.8,1.0,159.1,1.76,1901.2,6.79,39.69
+VJ-1131,17/02/2026,Dedicada,PR-D185,Unidade Oeste -> Indústria Local (PR),140,49.0,2.7,8.0,81.9,1.71,912.8,6.52,18.63
+VJ-1132,17/02/2026,Própria,PR-P029,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.8,10.2,4.3,308.5,1.88,3543.8,6.11,72.62
+VJ-1133,17/02/2026,Dedicada,PR-D206,Unidade Oeste -> Indústria Local (PR),140,49.0,2.6,6.8,76.9,1.82,939.4,6.71,19.17
+VJ-1134,17/02/2026,Dedicada,PR-D069,Unidade Oeste -> Indústria Local (PR),140,47.5,2.3,0.3,76.1,1.84,882.0,6.3,18.57
+VJ-1135,17/02/2026,Dedicada,PR-D047,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.7,10.4,0.5,337.2,1.72,3659.8,6.31,73.64
+VJ-1136,18/02/2026,Dedicada,PR-D094,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,9.7,7.6,339.2,1.71,3758.4,6.48,75.47
+VJ-1137,18/02/2026,Dedicada,PR-D190,Unidade Oeste -> Indústria Local (PR),140,48.9,2.5,0.4,82.4,1.7,886.2,6.33,18.12
+VJ-1138,18/02/2026,Dedicada,PR-D197,Unidade Oeste -> Indústria Local (PR),140,49.2,2.8,0.4,77.3,1.81,894.6,6.39,18.18
+VJ-1139,18/02/2026,Dedicada,PR-D204,Unidade Norte -> Terminal Mairinque (SP),490,49.8,8.5,0.1,269.2,1.82,3219.3,6.57,64.64
+VJ-1140,18/02/2026,Dedicada,PR-D144,Unidade Oeste -> Indústria Local (PR),140,49.3,2.3,18.8,82.8,1.69,971.6,6.94,19.71
+VJ-1141,18/02/2026,Dedicada,PR-D176,Unidade Sul -> Transbordo Ferroviário (PR),280,47.9,4.9,8.0,149.7,1.87,1892.8,6.76,39.52
+VJ-1142,18/02/2026,Dedicada,PR-D085,Unidade Oeste -> Indústria Local (PR),140,48.9,2.3,2.6,82.8,1.69,939.4,6.71,19.21
+VJ-1143,18/02/2026,Dedicada,PR-D039,Unidade Oeste -> Indústria Local (PR),140,49.0,2.3,2.1,78.2,1.79,914.2,6.53,18.66
+VJ-1144,19/02/2026,Dedicada,PR-D100,Unidade Sul -> Transbordo Ferroviário (PR),280,48.6,5.3,2.6,153.8,1.82,1974.0,7.05,40.62
+VJ-1145,19/02/2026,Própria,PR-P033,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.3,11.0,8.9,306.9,1.89,3596.0,6.2,72.94
+VJ-1146,19/02/2026,Dedicada,PR-D101,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,10.1,6.5,318.7,1.82,3694.6,6.37,74.19
+VJ-1147,19/02/2026,Dedicada,PR-D023,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,10.6,1.2,315.2,1.84,3938.2,6.79,79.08
+VJ-1148,19/02/2026,Própria,PR-P010,Unidade Norte -> Terminal Mairinque (SP),490,48.6,8.2,1.1,255.2,1.92,3033.1,6.19,62.41
+VJ-1149,19/02/2026,Dedicada,PR-D069,Unidade Oeste -> Indústria Local (PR),140,47.8,2.3,0.6,76.1,1.84,921.2,6.58,19.27
+VJ-1150,19/02/2026,Dedicada,PR-D100,Unidade Norte -> Terminal Mairinque (SP),490,50.0,9.0,6.5,288.2,1.7,3287.9,6.71,65.76
+VJ-1151,19/02/2026,Dedicada,PR-D034,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.6,11.0,8.7,311.8,1.86,4060.0,7.0,81.85
+VJ-1152,20/02/2026,Própria,PR-P031,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.8,9.8,1.8,291.5,1.99,3642.4,6.28,76.2
+VJ-1153,20/02/2026,Dedicada,PR-D138,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,10.9,0.1,315.2,1.84,3978.8,6.86,79.9
+VJ-1154,20/02/2026,Dedicada,PR-D147,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.7,9.7,0.5,327.7,1.77,4112.2,7.09,82.74
+VJ-1155,20/02/2026,Dedicada,PR-D186,Unidade Oeste -> Indústria Local (PR),140,48.8,2.5,20.6,77.3,1.81,897.4,6.41,18.39
+VJ-1156,20/02/2026,Dedicada,PR-D096,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.0,10.0,2.1,324.0,1.79,3781.6,6.52,77.18
+VJ-1157,20/02/2026,Dedicada,PR-D001,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.5,11.3,8.8,316.9,1.83,3839.6,6.62,79.17
+VJ-1158,20/02/2026,Dedicada,PR-D069,Unidade Sul -> Transbordo Ferroviário (PR),280,47.6,4.9,5.9,164.7,1.7,1859.2,6.64,39.06
+VJ-1159,20/02/2026,Dedicada,PR-D004,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.3,10.5,2.9,343.2,1.69,3845.4,6.63,79.61
+VJ-1160,21/02/2026,Dedicada,PR-D016,Unidade Oeste -> Indústria Local (PR),140,49.5,2.5,1.4,80.9,1.73,984.2,7.03,19.88
+VJ-1161,21/02/2026,Dedicada,PR-D024,Unidade Norte -> Terminal Mairinque (SP),490,47.5,9.4,0.8,286.5,1.71,3366.3,6.87,70.87
+VJ-1162,21/02/2026,Dedicada,PR-D080,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.3,9.9,5.7,313.5,1.85,3938.2,6.79,81.54
+VJ-1163,21/02/2026,Dedicada,PR-D002,Unidade Oeste -> Indústria Local (PR),140,48.5,2.3,8.9,81.4,1.72,917.0,6.55,18.91
+VJ-1164,21/02/2026,Própria,PR-P028,Unidade Sul -> Transbordo Ferroviário (PR),280,48.8,5.3,6.2,136.6,2.05,1772.4,6.33,36.32
+VJ-1165,21/02/2026,Dedicada,PR-D128,Unidade Sul -> Transbordo Ferroviário (PR),280,49.8,5.5,4.5,160.0,1.75,1976.8,7.06,39.69
+VJ-1166,21/02/2026,Dedicada,PR-D160,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.4,11.5,0.3,337.2,1.72,4036.8,6.96,83.4
+VJ-1167,21/02/2026,Dedicada,PR-D084,Unidade Sul -> Transbordo Ferroviário (PR),280,48.4,4.9,20.7,152.2,1.84,1764.0,6.3,36.45
+VJ-1168,22/02/2026,Própria,PR-P024,Unidade Oeste -> Indústria Local (PR),140,49.3,2.4,9.6,75.7,1.85,894.6,6.39,18.15
+VJ-1169,22/02/2026,Dedicada,PR-D140,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.6,10.3,2.1,325.8,1.78,3677.2,6.34,75.66
+VJ-1170,22/02/2026,Dedicada,PR-D178,Unidade Oeste -> Indústria Local (PR),140,48.1,2.7,23.5,78.2,1.79,911.4,6.51,18.95
+VJ-1171,22/02/2026,Própria,PR-P035,Unidade Sul -> Transbordo Ferroviário (PR),280,48.6,5.1,5.5,153.8,1.82,1635.2,5.84,33.65
+VJ-1172,22/02/2026,Dedicada,PR-D124,Unidade Oeste -> Indústria Local (PR),140,47.9,2.5,5.2,80.9,1.73,949.2,6.78,19.82
+VJ-1173,22/02/2026,Dedicada,PR-D033,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,10.4,8.3,308.5,1.88,3973.0,6.85,82.94
+VJ-1174,22/02/2026,Dedicada,PR-D161,Unidade Oeste -> Indústria Local (PR),140,48.7,2.3,10.0,74.9,1.87,894.6,6.39,18.37
+VJ-1175,22/02/2026,Própria,PR-P043,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.5,11.2,6.4,302.1,1.92,3538.0,6.1,72.95
+VJ-1176,23/02/2026,Dedicada,PR-D101,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.8,9.9,0.8,337.2,1.72,3862.8,6.66,77.57
+VJ-1177,23/02/2026,Dedicada,PR-D012,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.4,10.6,2.5,318.7,1.82,3828.0,6.6,79.09
+VJ-1178,23/02/2026,Dedicada,PR-D067,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.0,10.5,15.8,343.2,1.69,3712.0,6.4,75.76
+VJ-1179,23/02/2026,Própria,PR-P001,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.1,9.9,1.5,311.8,1.86,3497.4,6.03,71.23
+VJ-1180,23/02/2026,Dedicada,PR-D161,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.5,9.9,2.8,335.3,1.73,4002.0,6.9,84.25
+VJ-1181,23/02/2026,Própria,PR-P040,Unidade Oeste -> Indústria Local (PR),140,49.2,2.3,3.4,71.4,1.96,893.2,6.38,18.15
+VJ-1182,23/02/2026,Dedicada,PR-D074,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,11.3,3.5,313.5,1.85,3688.8,6.36,77.01
+VJ-1183,23/02/2026,Dedicada,PR-D043,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.9,11.3,5.7,316.9,1.83,3816.4,6.58,76.48
+VJ-1184,24/02/2026,Dedicada,PR-D044,Unidade Sul -> Transbordo Ferroviário (PR),280,47.9,4.8,17.2,153.0,1.83,1974.0,7.05,41.21
+VJ-1185,24/02/2026,Dedicada,PR-D029,Unidade Oeste -> Indústria Local (PR),140,48.5,2.5,1.7,79.1,1.77,956.2,6.83,19.72
+VJ-1186,24/02/2026,Dedicada,PR-D141,Unidade Oeste -> Indústria Local (PR),140,47.7,2.6,0.8,80.0,1.75,957.6,6.84,20.08
+VJ-1187,24/02/2026,Dedicada,PR-D012,Unidade Sudoeste -> Porto de Paranaguá (PR),580,50.0,11.4,1.3,331.4,1.75,3822.2,6.59,76.44
+VJ-1188,24/02/2026,Dedicada,PR-D095,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.8,11.4,13.1,308.5,1.88,3926.6,6.77,80.46
+VJ-1189,24/02/2026,Dedicada,PR-D046,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.0,9.6,6.2,343.2,1.69,3659.8,6.31,74.69
+VJ-1190,24/02/2026,Própria,PR-P002,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.7,11.1,2.0,320.4,1.81,3683.0,6.35,77.21
+VJ-1191,24/02/2026,Dedicada,PR-D035,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.4,10.8,10.2,322.2,1.8,4077.4,7.03,82.54
+VJ-1192,25/02/2026,Dedicada,PR-D081,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.0,11.0,11.9,327.7,1.77,3938.2,6.79,82.05
+VJ-1193,25/02/2026,Dedicada,PR-D090,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.7,10.7,11.2,316.9,1.83,4060.0,7.0,81.69
+VJ-1194,25/02/2026,Dedicada,PR-D008,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.0,11.4,15.1,325.8,1.78,3990.4,6.88,83.13
+VJ-1195,25/02/2026,Dedicada,PR-D093,Unidade Oeste -> Indústria Local (PR),140,48.0,2.5,1.7,75.7,1.85,896.0,6.4,18.67
+VJ-1196,25/02/2026,Dedicada,PR-D154,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.6,11.4,8.4,311.8,1.86,4071.6,7.02,85.54
+VJ-1197,25/02/2026,Dedicada,PR-D202,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.7,9.7,3.7,329.5,1.76,3683.0,6.35,75.63
+VJ-1198,25/02/2026,Dedicada,PR-D090,Unidade Oeste -> Indústria Local (PR),140,48.9,2.7,11.1,80.5,1.74,942.2,6.73,19.27
+VJ-1199,25/02/2026,Dedicada,PR-D162,Unidade Oeste -> Indústria Local (PR),140,47.7,2.5,7.8,77.8,1.8,897.4,6.41,18.81
+VJ-1200,26/02/2026,Dedicada,PR-D115,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.4,9.6,9.0,311.8,1.86,3659.8,6.31,74.09
+VJ-1201,26/02/2026,Própria,PR-P041,Unidade Norte -> Terminal Mairinque (SP),490,48.6,8.5,6.4,263.4,1.86,2900.8,5.92,59.69
+VJ-1202,26/02/2026,Própria,PR-P007,Unidade Oeste -> Indústria Local (PR),140,48.8,2.5,1.2,75.3,1.86,827.4,5.91,16.95
+VJ-1203,26/02/2026,Dedicada,PR-D196,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.6,10.8,4.7,320.4,1.81,3880.2,6.69,79.84
+VJ-1204,26/02/2026,Dedicada,PR-D058,Unidade Sul -> Transbordo Ferroviário (PR),280,48.5,5.2,25.1,153.0,1.83,1892.8,6.76,39.03
+VJ-1205,26/02/2026,Própria,PR-P045,Unidade Sul -> Transbordo Ferroviário (PR),280,48.9,4.8,16.6,143.6,1.95,1649.2,5.89,33.73
+VJ-1206,26/02/2026,Própria,PR-P011,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,9.4,0.3,318.7,1.82,3514.8,6.06,73.38
+VJ-1207,26/02/2026,Dedicada,PR-D157,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.0,10.0,1.1,311.8,1.86,3915.0,6.75,81.56
+VJ-1208,27/02/2026,Própria,PR-P036,Unidade Norte -> Terminal Mairinque (SP),490,49.7,8.6,0.8,262.0,1.87,2866.5,5.85,57.68
+VJ-1209,27/02/2026,Própria,PR-P025,Unidade Norte -> Terminal Mairinque (SP),490,49.9,8.3,7.8,267.8,1.83,3101.7,6.33,62.16
+VJ-1210,27/02/2026,Dedicada,PR-D021,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.4,10.4,10.2,310.2,1.87,3955.6,6.82,81.73
+VJ-1211,27/02/2026,Dedicada,PR-D164,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.2,11.4,1.4,337.2,1.72,4048.4,6.98,83.99
+VJ-1212,27/02/2026,Dedicada,PR-D138,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.1,10.2,4.2,313.5,1.85,3973.0,6.85,80.92
+VJ-1213,27/02/2026,Dedicada,PR-D101,Unidade Oeste -> Indústria Local (PR),140,48.5,2.3,11.0,78.7,1.78,929.6,6.64,19.17
+VJ-1214,27/02/2026,Dedicada,PR-D201,Unidade Oeste -> Indústria Local (PR),140,47.6,2.7,7.9,80.9,1.73,957.6,6.84,20.12
+VJ-1215,27/02/2026,Dedicada,PR-D152,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,10.0,4.7,313.5,1.85,3781.6,6.52,78.95
+VJ-1216,28/02/2026,Dedicada,PR-D192,Unidade Oeste -> Indústria Local (PR),140,49.3,2.7,5.4,79.1,1.77,917.0,6.55,18.6
+VJ-1217,28/02/2026,Dedicada,PR-D177,Unidade Norte -> Terminal Mairinque (SP),490,49.1,8.7,4.3,275.3,1.78,3395.7,6.93,69.16
+VJ-1218,28/02/2026,Dedicada,PR-D099,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.6,11.3,2.1,331.4,1.75,3862.8,6.66,81.15
+VJ-1219,28/02/2026,Dedicada,PR-D036,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,10.5,5.0,322.2,1.8,4025.2,6.94,83.68
+VJ-1220,28/02/2026,Dedicada,PR-D210,Unidade Norte -> Terminal Mairinque (SP),490,48.1,8.3,7.0,286.5,1.71,3410.4,6.96,70.9
+VJ-1221,28/02/2026,Dedicada,PR-D096,Unidade Sul -> Transbordo Ferroviário (PR),280,49.2,5.2,12.4,159.1,1.76,1957.2,6.99,39.78
+VJ-1222,28/02/2026,Própria,PR-P024,Unidade Oeste -> Indústria Local (PR),140,47.5,2.4,6.1,76.9,1.82,859.6,6.14,18.1
+VJ-1223,28/02/2026,Dedicada,PR-D151,Unidade Oeste -> Indústria Local (PR),140,47.8,2.4,8.6,80.9,1.73,929.6,6.64,19.45
+VJ-1224,01/03/2026,Dedicada,PR-D190,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.5,9.5,1.0,320.4,1.81,3804.8,6.56,76.86
+VJ-1225,01/03/2026,Dedicada,PR-D037,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.9,11.0,3.7,331.4,1.75,3926.6,6.77,81.97
+VJ-1226,01/03/2026,Dedicada,PR-D012,Unidade Oeste -> Indústria Local (PR),140,49.1,2.6,0.1,76.5,1.83,924.0,6.6,18.82
+VJ-1227,01/03/2026,Dedicada,PR-D113,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,11.2,1.7,339.2,1.71,3932.4,6.78,81.75
+VJ-1228,01/03/2026,Dedicada,PR-D183,Unidade Sudoeste -> Porto de Paranaguá (PR),580,47.7,9.4,7.8,310.2,1.87,3978.8,6.86,83.41
+VJ-1229,01/03/2026,Dedicada,PR-D013,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.1,9.5,28.8,327.7,1.77,3973.0,6.85,82.6
+VJ-1230,01/03/2026,Dedicada,PR-D023,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.3,10.3,0.6,335.3,1.73,3828.0,6.6,77.65
+VJ-1231,01/03/2026,Dedicada,PR-D099,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.6,9.6,3.1,343.2,1.69,3729.4,6.43,75.19
+VJ-1232,02/03/2026,Dedicada,PR-D105,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.6,10.3,9.7,339.2,1.71,3851.2,6.64,77.65
+VJ-1233,02/03/2026,Dedicada,PR-D030,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.5,10.1,1.4,325.8,1.78,3717.8,6.41,76.66
+VJ-1234,02/03/2026,Dedicada,PR-D017,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.2,11.4,4.9,331.4,1.75,4065.8,7.01,82.64
+VJ-1235,02/03/2026,Dedicada,PR-D113,Unidade Sul -> Transbordo Ferroviário (PR),280,48.0,4.7,7.9,151.4,1.85,1842.4,6.58,38.38
+VJ-1236,02/03/2026,Dedicada,PR-D062,Unidade Oeste -> Indústria Local (PR),140,48.2,2.7,5.7,79.1,1.77,898.8,6.42,18.65
+VJ-1237,02/03/2026,Própria,PR-P020,Unidade Oeste -> Indústria Local (PR),140,49.7,2.3,1.2,71.4,1.96,841.4,6.01,16.93
+VJ-1238,02/03/2026,Dedicada,PR-D112,Unidade Norte -> Terminal Mairinque (SP),490,47.5,8.3,2.6,272.2,1.8,3341.8,6.82,70.35
+VJ-1239,02/03/2026,Própria,PR-P025,Unidade Oeste -> Indústria Local (PR),140,47.7,2.4,9.2,69.3,2.02,882.0,6.3,18.49
+VJ-1240,03/03/2026,Dedicada,PR-D086,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.0,11.5,4.8,339.2,1.71,3810.6,6.57,79.39
+VJ-1241,03/03/2026,Dedicada,PR-D141,Unidade Oeste -> Indústria Local (PR),140,47.6,2.6,0.0,81.9,1.71,890.4,6.36,18.71
+VJ-1242,03/03/2026,Dedicada,PR-D187,Unidade Oeste -> Indústria Local (PR),140,48.0,2.6,8.6,82.8,1.69,928.2,6.63,19.34
+VJ-1243,03/03/2026,Dedicada,PR-D019,Unidade Norte -> Terminal Mairinque (SP),490,49.0,9.0,0.2,267.8,1.83,3209.5,6.55,65.5
+VJ-1244,03/03/2026,Própria,PR-P036,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.6,11.4,8.2,297.4,1.95,3398.8,5.86,69.93
+VJ-1245,03/03/2026,Dedicada,PR-D140,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.7,9.5,1.4,327.7,1.77,3932.4,6.78,79.12
+VJ-1246,03/03/2026,Dedicada,PR-D189,Unidade Sudoeste -> Porto de Paranaguá (PR),580,49.5,10.2,19.0,313.5,1.85,3822.2,6.59,77.22
+VJ-1247,03/03/2026,Dedicada,PR-D147,Unidade Sudoeste -> Porto de Paranaguá (PR),580,48.4,10.8,2.8,315.2,1.84,3752.6,6.47,77.53
+VJ-1248,04/03/2026,Dedicada,PR-D076,Unidade Oeste -> Indústria Local (PR),140,48.1,2.6,2.4,77.8,1.8,992.6,7.09,20.64
+VJ-1249,04/03/2026,Dedicada,PR-D009,Unidade Oeste -> Indústria Local (PR),140,48.4,2.5,1.0,75.7,1.85,932.4,6.66,19.26
